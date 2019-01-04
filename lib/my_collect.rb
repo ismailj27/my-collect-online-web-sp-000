@@ -3,7 +3,6 @@ def my_collect(collection)
   new_collection = []
   while i < collection.length
     new_collection << yield(collection[i])
-    collection.slice(0)
     i += 1
   end
   new_collection
